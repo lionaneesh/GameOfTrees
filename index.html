@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans">
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+     .howwe {
+    margin-top: 20px; }
+    .howwe > span {
+      display: inline-block;
+      height: 100px;
+      line-height: 100px;
+      padding: 0;
+      box-sizing: border-box;
+      width: 100px !important;
+      background: rgb(75, 214, 91);
+      border-radius: 100px;
+      color: #fff;
+      text-align: center;
+      font-size: 180%;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif ;
+      position: relative;
+      z-index: 100; }
+      .connector {
+        position: absolute;
+        width: 300px;
+        background: #7ecd94;
+        height: 4px;
+        left: 100%;
+        top: 50%; }
+     
+        .got {
+          font-family: "PT Sans";
+        }
+
+        
+    </style>
+  </head>
+  <body>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+                      <div style="width:200px; position: absolute; top: 20px; left: 20px; z-index: 2" id="container">
+                        <img style="z-index: 2; width: 100%; height: auto;" src="img/logo.png"/></div>
+
+          <img src="img/tree.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="got" style="text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.65);">Game of Trees</h1>
+              <p>Gane of trees is something to d</p>
+              <center><div style="width:257px;"><a style="float: left;" class="btn btn-lg btn-primary" href="#" role="button">Get Started</a><a style="float: left;" class="btn btn-lg btn-primary" href="#" role="button">I'm an NGO</a></div></center>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="howwe">
+            <span>1<div class="connector">&nbsp;</div></span>
+          </div>
+            <h2>Buy a virtual sapling</h2>
+            <p>Pay Rs. 50 to start the game. The amount will be used to buy a virtual saplings, which you use to plant a tree.</p>
+            <p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+        <div class="howwe">
+          <span>2<div class="connector">&nbsp;</div></span>
+        </div>
+          <h2>Nurture it</h2>
+          <p>Plant the virtual sapling and login everyday to take care of it.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+        <div class="howwe">
+          <span>3</span>
+        </div>
+          <h2>We plant a real tree</h2>
+          <p>Our partenering NGOs will plant a real tree for each virtrual one.</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+å
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+

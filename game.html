@@ -23,6 +23,14 @@
         margin: 0;
         padding: 0;
       }
+
+      #tree {
+       height: 130px;
+      }
+      #water {
+        margin-left: 80px;
+        height: 150px;
+      }
     </style>
     <title>Game of Trees</title>
 
@@ -84,7 +92,7 @@
   <div class="span13">
   <h1 style="color: #FFF;">Plant your tree</h1>
   <h3 style="color: #FFF;">Your 20x20 playground.</h3>
-  <input style="width: 50px;" id="x" type="number" value="1"/> <input style="width: 50px;" value="1" type="number" id="y"> <a style="color: #FFF;" id="submit" href="#">Plant</a>
+  <input style="width: 50px;" id="x" type="number" value="1"/> <input style="width: 50px;" value="1" type="number" id="y"> <a style="color: #FFF;" id="submit" href="#">Plant</a> <a style="color: #FFF;" id="submit2" href="#">Water</a>
   </div>
   <table>
     <tr>
@@ -213,7 +221,7 @@
   <script>
     function add_tree(x, y) {
       var td = $("td").eq(20 * y + x);
-      td.html("<img src=\"img/tree.gif\"/>");
+      td.html("<img id='tree' src=\"img/tree.gif\"/>");
     }
 
     $("#submit").click(function() {
@@ -221,7 +229,24 @@
       var y = parseInt(document.getElementById('y').value);
       add_tree(x - 1, y - 1);
     });
-    
+
+
+    $("#submit2").click(function() {
+      var x = parseInt(document.getElementById('x').value);
+      var y = parseInt(document.getElementById('y').value);
+      add_water(x - 1, y - 1);
+    });
+
+    function add_water(x, y) {
+      var td = $("td").eq(20 * y + x);
+      var images = td.children();
+      images.animate({
+        height: "150px",
+      });
+      //css("height", "180px").animate();
+      td.append("<img id='water' src='img/wateringcan.gif'/>");
+      setTimeout(function() { var water = document.getElementById("water"); water.parentNode.removeChild(water);}, 3000);
+    }
   </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
